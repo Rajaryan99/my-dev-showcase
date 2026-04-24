@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Abril Fatface"', 'serif'],
+        body: ['Cabin', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        sticker: {
+          yellow: "hsl(var(--sticker-yellow))",
+          pink: "hsl(var(--sticker-pink))",
+          blue: "hsl(var(--sticker-blue))",
+          green: "hsl(var(--sticker-green))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -84,6 +94,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 5s ease-in-out infinite",
+        wiggle: "wiggle 2s ease-in-out infinite",
+        marquee: "marquee 25s linear infinite",
       },
     },
   },
