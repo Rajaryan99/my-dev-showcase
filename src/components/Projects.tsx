@@ -5,7 +5,7 @@ const projects = [
     n: "01",
     title: "Nimbus Analytics",
     desc: "Real-time SaaS dashboard for product teams with custom event pipelines.",
-    tags: ["Next.js", "PostgreSQL", "tRPC"],
+    tags: ["Next.js", "React.js",  "PostgreSQL", "tRPC"],
     color: "bg-sticker-blue",
   },
   {
@@ -66,7 +66,7 @@ const Projects = () => {
             >
               <div className="flex items-start justify-between">
                 <span className="font-display text-5xl">{p.n}</span>
-                <a href="#" className="sticker rounded-full bg-background w-11 h-11 grid place-items-center hover:bg-foreground hover:text-background transition-colors">
+                <a href="https://github.com/Rajaryan99" className="sticker rounded-full bg-background w-11 h-11 grid place-items-center hover:bg-foreground hover:text-background transition-colors">
                   <ArrowUpRight size={18} />
                 </a>
               </div>
