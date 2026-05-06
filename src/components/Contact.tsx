@@ -29,14 +29,14 @@ const Contact = () => {
               <Mail />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">Email</div>
-                <div className="font-semibold">raj@example.com</div>
+                <div className="font-semibold">singhrajaryan66@gmail.com</div>
               </div>
             </a>
-            <a href="#" className="sticker bg-sticker-pink rounded-2xl p-5 flex items-center gap-4 block">
+            <a href="https://www.linkedin.com/in/rajaryan77/" className="sticker bg-sticker-pink rounded-2xl p-5 flex items-center gap-4 block">
               <Linkedin />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">LinkedIn</div>
-                <div className="font-semibold">/in/rajaryan</div>
+                <div className="font-semibold">/in/rajaryan77</div>
               </div>
             </a>
             <a href="#" className="sticker bg-sticker-blue rounded-2xl p-5 flex items-center gap-4 block">

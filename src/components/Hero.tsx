@@ -1,4 +1,5 @@
 import portrait from "@/assets/raj-portrait.png";
+import me from "@/assets/me.png"
 import { Sparkles, Star } from "lucide-react";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
               src={portrait}
               alt="Illustrated portrait of Raj Aryan"
               width={320}
-              height={373}
+              height={390}
               className="w-56 sm:w-72 md:w-80 mx-auto drop-shadow-xl"
             />
             <Sparkles className="absolute -left-6 top-12 text-accent animate-wiggle" />
