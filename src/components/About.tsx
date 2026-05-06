@@ -1,16 +1,17 @@
 import { Code2, Layers, Rocket, Coffee } from "lucide-react";
 
 const stats = [
-  { icon: Code2, label: "Years Coding", value: "5+" },
-  { icon: Rocket, label: "Projects Shipped", value: "30+" },
+  { icon: Code2, label: "Years Coding", value: "1+" },
+  { icon: Rocket, label: "Projects Shipped", value: "15+" },
   { icon: Layers, label: "Tech Stacks", value: "12" },
-  { icon: Coffee, label: "Cups of Chai", value: "∞" },
+  { icon: Coffee, label: "Cups of Coffee", value: "∞" },
 ];
 
 const stack = {
   Frontend: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-  Backend: ["Node.js", "Express", "tRPC", "GraphQL", "PostgreSQL"],
-  Tools: ["AWS", "Docker", "Git", "Figma", "Vercel"],
+  Backend: ["Node.js", "Express", "Rest API", "GraphQL", "MongoDB"],
+  Tools: ["AWS", "Docker", "Git", "Figma", "Vercel", "Github"],
+  AI_Tools: ["Claude.ai", "Cursor", "Copilot", "CodeX", "Loveable.dev"],
 };
 
 const About = () => {
@@ -24,7 +25,7 @@ const About = () => {
             </p>
             <h2 className="text-6xl sm:text-7xl md:text-8xl mb-8">
               Hi, I'm<br />
-              <span className="text-accent">Raj.</span>
+              <span className="text-accent">Raj Aryan.</span>
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground max-w-lg">
               <p>
