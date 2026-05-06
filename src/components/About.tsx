@@ -8,7 +8,7 @@ const stats = [
 ];
 
 const stack = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+  Frontend: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion", "GSAP"],
   Backend: ["Node.js", "Express", "Rest API", "GraphQL", "MongoDB"],
   Tools: ["AWS", "Docker", "Git", "Figma", "Vercel", "Github"],
   AI_Tools: ["Claude.ai", "Cursor", "Copilot", "CodeX", "Loveable.dev"],
