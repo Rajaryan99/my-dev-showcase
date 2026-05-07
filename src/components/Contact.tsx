@@ -12,6 +12,8 @@ const Contact = () => {
     if (isSending) return;
 
     const formData = new FormData(e.currentTarget);
+    
+
     setIsSending(true);
 
     try {
@@ -121,7 +123,7 @@ const Contact = () => {
               />
             </div>
             <button
-              type="submit"
+              type="submit" 
               disabled={isSending}
               className="sticker bg-foreground text-background rounded-full px-8 py-3 font-semibold w-full sm:w-auto disabled:cursor-not-allowed disabled:opacity-70"
             >
