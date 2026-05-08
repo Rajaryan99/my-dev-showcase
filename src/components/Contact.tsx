@@ -1,12 +1,14 @@
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { toast } from "sonner";
+import { FaCopy } from "react-icons/fa6";
+
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isSending, setIsSending] = useState(false);
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const  onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (isSending) return;
@@ -38,6 +40,27 @@ const Contact = () => {
     }
   };
 
+  const emailRef = useRef<HTMLDivElement>(null)
+
+  const copyEmail = async (e: React.MouseEvent<SVGElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const email =  emailRef.current?.textContent?.trim();
+    if(!email) return
+
+
+    try {
+
+      await navigator.clipboard.writeText(email)
+      toast.success('Copied!')
+      
+    } catch (error) {
+      toast.error("Could not copy email.")
+      
+    }
+  }
+
   return (
     <section id="contact" className="py-24 relative">
       <div className="container">
@@ -52,28 +75,31 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
           <div className="lg:col-span-2 space-y-4">
-            <a href="mailto:singhrajaryan66@gmail.com" className="sticker bg-sticker-yellow rounded-2xl p-5 flex items-center gap-4 block">
+            <a href="mailto:singhrajaryan66@gmail.com" className="sticker bg-sticker-yellow rounded-2xl p-5 flex  items-center gap-4 block" >
               <Mail />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">Email</div>
-                <div className="font-semibold">singhrajaryan66@gmail.com</div>
+                <div className="font-semibold" id="email" ref={emailRef}  >singhrajaryan66@gmail.com</div>
+                
               </div>
+              <FaCopy className="mt-3 hover:text-white" onClick={copyEmail} />
             </a>
-            <a href="https://www.linkedin.com/in/rajaryan77/" className="sticker bg-sticker-pink rounded-2xl p-5 flex items-center gap-4 block">
+            <a href="https://www.linkedin.com/in/rajaryan77/" target="_blank" className="sticker bg-sticker-pink rounded-2xl p-5 flex items-center gap-4 block">
               <Linkedin />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">LinkedIn</div>
                 <div className="font-semibold">/in/rajaryan77</div>
               </div>
             </a>
-            <a href="https://github.com/Rajaryan99" className="sticker bg-sticker-blue rounded-2xl p-5 flex items-center gap-4 block">
+            <a href="https://github.com/Rajaryan99"  target="_blank" className="sticker bg-sticker-blue rounded-2xl p-5 flex items-center gap-4 block">
               <Github />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">GitHub</div>
                 <div className="font-semibold">@Rajaryan99</div>
               </div>
+              
             </a>
-            <a href="https://x.com/beingrax" className="sticker bg-sticker-green rounded-2xl p-5 flex items-center gap-4 block">
+            <a href="https://x.com/beingrax"  target="_blank" className="sticker bg-sticker-green rounded-2xl p-5 flex items-center gap-4 block">
               <Twitter />
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider opacity-70">Twitter</div>
