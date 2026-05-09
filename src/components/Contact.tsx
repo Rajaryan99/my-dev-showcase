@@ -162,7 +162,7 @@ const Contact = () => {
 
       <footer className="mt-24 border-t-2 border-foreground pt-8 pb-6">
         <div className="container flex flex-wrap justify-between items-center gap-4 text-sm">
-          <p className="font-semibold">© 2025 Raj Aryan. Crafted with care.</p>
+          <p className="font-semibold">© 2025 Raj Aryan.</p>
           <p className="text-muted-foreground">Made with React + Tailwind ✦</p>
         </div>
       </footer>
