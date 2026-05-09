@@ -1,6 +1,7 @@
 import portrait from "@/assets/raj-portrait.png";
 import me from "@/assets/me.png"
 import { Sparkles, Star } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   return (
