@@ -42,8 +42,8 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
-            <a href="#projects" className="sticker bg-foreground text-background rounded-full px-6 py-3 font-semibold">
-              See my work
+            <a href="https://drive.google.com/file/d/1EHTrKtVc5l3yHadn2EOhoYyBLpudFdJr/view?usp=sharing" target="_blank" className="sticker bg-foreground text-background rounded-full px-6 py-3 font-semibold">
+              My Resume
             </a>
             <a href="#contact" className="sticker bg-sticker-yellow rounded-full px-6 py-3 font-semibold">
               Let's talk →
@@ -61,9 +61,13 @@ const Hero = () => {
               <span>TypeScript</span><span className="text-accent">✦</span>
               <span>Node.js</span><span className="text-accent">✦</span>
               <span>Next.js</span><span className="text-accent">✦</span>
-              <span>PostgreSQL</span><span className="text-accent">✦</span>
+              <span>GSAP</span><span className="text-accent">✦</span>
               <span>Tailwind</span><span className="text-accent">✦</span>
               <span>AWS</span><span className="text-accent">✦</span>
+              <span>MongoDB</span><span className="text-accent">✦</span>
+              <span>Claude code</span><span className="text-accent">✦</span>
+              <span>CodeX</span><span className="text-accent">✦</span>
+              <span>AI</span><span className="text-accent">✦</span>
             </div>
           ))}
         </div>

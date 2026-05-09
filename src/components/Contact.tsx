@@ -106,6 +106,7 @@ const Contact = () => {
                 <div className="font-semibold">@beingrax</div>
               </div>
             </a>
+            
           </div>
 
           <form onSubmit={onSubmit} className="lg:col-span-3 sticker bg-background rounded-3xl p-8 space-y-4">
