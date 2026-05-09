@@ -1,4 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import { a } from "vitest/dist/chunks/suite.d.FvehnV49.js";
 
 const projects = [
   {
@@ -6,6 +8,8 @@ const projects = [
     title: "QueryGPT – AI-powered chat Web App,",
     desc: "Developed an AI-powered search and query assistant using modern JavaScript and API integration, enabling users to generate intelligent responses dynamically",
     tags: ["React.js", "Node.js",  "MongoDB", "OpenAI API", "Context API", "Bcrypt"],
+    demo: "https://query-gpt-openai.vercel.app/",
+    github: "https://github.com/Rajaryan99/QueryGPT_OpenAI_Full-Stack_Project",
     color: "bg-sticker-blue",
   },
   {
@@ -13,6 +17,8 @@ const projects = [
     title: " SeeYou Video-conferencing-App-webRTC",
     desc: "Built a real-time video conferencing application using WebRTC for peer-to-peer communication, and used socket for bi-directional connection for Chat/Messages.",
     tags: ["React.js", "Node.js", "WebRTC", "Socket.io", "REST API's", "JWT Auth"],
+    demo: "https://seeyou-video-conferencing-web-uuqx.onrender.com/",
+    github: "https://github.com/Rajaryan99/SeeYou-Video-Conferencing-web-application-WebRTC",
     color: "bg-sticker-pink",
   },
   {
@@ -20,6 +26,8 @@ const projects = [
     title: "Version-control-System",
     desc: "Developed a full-stack GitHub Clone using MongoDB, Express.js, React.js, and Node.js, implementing secure JWT-based authentication and repository CRUD functionality.",
     tags: ["React.js", "", "Tailwind", "Node.js", "express", "AWS", "REST API's",],
+    demo: "https://main.d37y4f57y4w6ph.amplifyapp.com/auth",
+    github: "https://github.com/Rajaryan99/version-control-system",
     color: "bg-sticker-green",
   },
   {
@@ -27,6 +35,8 @@ const projects = [
     title: "Zerodha Clone",
     desc: "It's a frontend clone of Zerodha a trading platform, with minimal UI/UX Experience and smooth nevigation between differenct sections.",
     tags: ["React.js", "Material UI", "TailwindCSS", "React-Router", "Render"],
+    demo: "https://zerodha-clone-frontend-0bma.onrender.com/",
+    github: "https://github.com/Rajaryan99/Zerodha-Clone",
     color: "bg-accent",
   },
   {
@@ -34,6 +44,8 @@ const projects = [
     title: "WounderLust - Airbnb clone ",
     desc: "A full-stack project that allows user to explore, add, edit, update, review, and manage rental listing with Auth, CURD operation and image upload-.",
     tags: ["HTML", "CSS", "Javascript", "Bootstrap", "TailwindCSS", "Database", "Cloudinary", "Render"],
+    demo: "https://wounderlust-airbnb-website.onrender.com/",
+    github: "https://github.com/Rajaryan99/wounderLust-airbnb-website-fullStack-Project",
     color: "bg-sticker-yellow",
   },
 ];
@@ -66,9 +78,19 @@ const Projects = () => {
             >
               <div className="flex items-start justify-between">
                 <span className="font-display text-5xl">{p.n}</span>
-                <a href="https://github.com/Rajaryan99" className="sticker rounded-full bg-background w-11 h-11 grid place-items-center hover:bg-foreground hover:text-background transition-colors">
-                  <ArrowUpRight size={18} />
+                <div className="flex justify-center items-center">
+                <a href={p.github} target="_blank" className="sticker rounded-full bg-background w-9 h-9 grid place-items-center hover:bg-foreground hover:text-background transition-colors">
+                  <FaGithub size={30} />
                 </a>
+                <a 
+              href={p.demo}
+              target="_blank"
+                  className=" sticker text-sm font-bold text-accent  border p-2 rounded-sm ml-5  bg-white text-black hover:bg-foreground hover:text-background transition-colors"
+
+              >
+                Live Demo
+              </a>
+              </div>
               </div>
               <div>
                 <h3 className="text-3xl mb-2">{p.title}</h3>
@@ -80,6 +102,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
+                
               </div>
             </article>
           ))}
